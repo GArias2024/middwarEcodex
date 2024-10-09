@@ -1,0 +1,6 @@
+com\ecodex\middleware\ws\config\CxfConfig.class
+com\ecodex\middleware\quartz\config\QuartzConfig.class
+com\ecodex\middleware\ws\service\impl\ExecJobTestServiceImpl.class
+com\ecodex\middleware\ws\service\ExecJobTestService.class
+com\ecodex\middleware\Application.class
+com\ecodex\middleware\quartz\job\PrintMessageJob.class
