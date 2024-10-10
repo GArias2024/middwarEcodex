@@ -24,7 +24,7 @@ import com.ecodex.middleware.ws.service.ExecJobTestService;
 public class ExecJobTestServiceImpl implements ExecJobTestService {
 	
     @Autowired
-    private Scheduler scheduler;
+    private Scheduler scheduler; 
 
     @Override
     public String runJob01 (String message) {
