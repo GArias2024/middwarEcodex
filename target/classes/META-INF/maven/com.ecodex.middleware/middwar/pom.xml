@@ -38,18 +38,30 @@
     </dependency>
     
     
-        <!-- Apache CXF Starter para Java EE (javax) -->
+    <!-- Apache CXF Starter para Java EE (javax) -->
     <dependency>
       <groupId>org.apache.cxf</groupId>
       <artifactId>cxf-spring-boot-starter-jaxws</artifactId>
       <version>3.4.5</version> <!-- Versión compatible con Java EE y javax.* -->
     </dependency>
     
-        <!-- Dependencia para JAXB (serialización de objetos) -->
+    <!-- Apache CXF Dependencies -->
+    <dependency>
+        <groupId>org.apache.cxf</groupId>
+        <artifactId>cxf-rt-frontend-jaxws</artifactId>
+        <version>3.5.0</version> 
+    </dependency>
+    
+    <dependency>
+        <groupId>org.apache.cxf</groupId>
+        <artifactId>cxf-rt-transports-http</artifactId>
+        <version>3.5.0</version>
+    </dependency>
+    
+    <!-- Dependencia para JAXB (serialización de objetos) -->
     <dependency>
       <groupId>javax.xml.bind</groupId>
       <artifactId>jaxb-api</artifactId>
-      <version>2.3.0</version>
     </dependency>
     
   </dependencies>
@@ -66,12 +78,38 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
         <configuration>
           <source>${java.version}</source>
           <target>${java.version}</target>
         </configuration>
       </plugin>
+      <!--      plugin para generar las clases del wsdl-->
+      <plugin>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-codegen-plugin</artifactId>
+            <version>3.5.0</version>
+            <executions>
+                <execution>
+                    <id>generate-sources</id>
+                    <phase>generate-sources</phase>
+                    <configuration>
+                        <wsdlOptions>
+                            <wsdlOption>
+                                <wsdl>http://localhost:8081/services/callback?wsdl</wsdl>
+                                <extraargs>
+                                    <extraarg>-p</extraarg>
+                                    <extraarg>com.ecodex.middleware.wsdlautogen</extraarg> <!-- Nombre del paquete -->
+                                </extraargs>
+                            </wsdlOption>
+                        </wsdlOptions>
+                        <sourceRoot>${basedir}/src/main/java</sourceRoot>
+                    </configuration>
+                    <goals>
+                        <goal>wsdl2java</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
     </plugins>
   </build>
 

@@ -1,6 +1,15 @@
-com\ecodex\middleware\ws\config\CxfConfig.class
 com\ecodex\middleware\quartz\config\QuartzConfig.class
-com\ecodex\middleware\ws\service\impl\ExecJobTestServiceImpl.class
+com\ecodex\middleware\wsdlautogen\OnJobCompleteResponse.class
+com\ecodex\middleware\wsdlautogen\OnJobComplete.class
+com\ecodex\middleware\wsdlautogen\SendMessageToMiddlewareCallbackImpl.class
 com\ecodex\middleware\ws\service\ExecJobTestService.class
+com\ecodex\middleware\wsdlautogen\ProcessCallbackResponse.class
+com\ecodex\middleware\wsdlautogen\SendMessageToMiddlewareCallbackImplService.class
 com\ecodex\middleware\Application.class
+com\ecodex\middleware\ws\config\CxfConfig.class
+com\ecodex\middleware\quartz\job\PrintMessageJobEnd.class
+com\ecodex\middleware\ws\service\impl\ExecJobTestServiceImpl.class
+com\ecodex\middleware\wsdlautogen\ProcessCallback.class
+com\ecodex\middleware\wsdlautogen\package-info.class
 com\ecodex\middleware\quartz\job\PrintMessageJob.class
+com\ecodex\middleware\wsdlautogen\ObjectFactory.class

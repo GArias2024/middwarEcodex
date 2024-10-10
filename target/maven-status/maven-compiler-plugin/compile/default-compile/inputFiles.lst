@@ -1,6 +1,15 @@
 I:\workspacesEclip\middwarEcodex\middwar\src\main\java\com\ecodex\middleware\ws\config\CxfConfig.java
-I:\workspacesEclip\middwarEcodex\middwar\src\main\java\com\ecodex\middleware\Application.java
-I:\workspacesEclip\middwarEcodex\middwar\src\main\java\com\ecodex\middleware\ws\service\impl\ExecJobTestServiceImpl.java
+I:\workspacesEclip\middwarEcodex\middwar\src\main\java\com\ecodex\middleware\wsdlautogen\ProcessCallback.java
+I:\workspacesEclip\middwarEcodex\middwar\src\main\java\com\ecodex\middleware\wsdlautogen\OnJobComplete.java
+I:\workspacesEclip\middwarEcodex\middwar\src\main\java\com\ecodex\middleware\wsdlautogen\SendMessageToMiddlewareCallbackImplService.java
 I:\workspacesEclip\middwarEcodex\middwar\src\main\java\com\ecodex\middleware\quartz\job\PrintMessageJob.java
+I:\workspacesEclip\middwarEcodex\middwar\src\main\java\com\ecodex\middleware\wsdlautogen\package-info.java
 I:\workspacesEclip\middwarEcodex\middwar\src\main\java\com\ecodex\middleware\ws\service\ExecJobTestService.java
+I:\workspacesEclip\middwarEcodex\middwar\src\main\java\com\ecodex\middleware\wsdlautogen\OnJobCompleteResponse.java
 I:\workspacesEclip\middwarEcodex\middwar\src\main\java\com\ecodex\middleware\quartz\config\QuartzConfig.java
+I:\workspacesEclip\middwarEcodex\middwar\src\main\java\com\ecodex\middleware\wsdlautogen\SendMessageToMiddlewareCallbackImpl.java
+I:\workspacesEclip\middwarEcodex\middwar\src\main\java\com\ecodex\middleware\wsdlautogen\ObjectFactory.java
+I:\workspacesEclip\middwarEcodex\middwar\src\main\java\com\ecodex\middleware\Application.java
+I:\workspacesEclip\middwarEcodex\middwar\src\main\java\com\ecodex\middleware\wsdlautogen\ProcessCallbackResponse.java
+I:\workspacesEclip\middwarEcodex\middwar\src\main\java\com\ecodex\middleware\ws\service\impl\ExecJobTestServiceImpl.java
+I:\workspacesEclip\middwarEcodex\middwar\src\main\java\com\ecodex\middleware\quartz\job\PrintMessageJobEnd.java

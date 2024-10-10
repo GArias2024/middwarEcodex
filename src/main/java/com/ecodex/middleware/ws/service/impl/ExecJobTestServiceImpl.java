@@ -24,7 +24,7 @@ import com.ecodex.middleware.ws.service.ExecJobTestService;
 public class ExecJobTestServiceImpl implements ExecJobTestService {
 	
     @Autowired
-    private Scheduler scheduler; 
+    private Scheduler scheduler;
 
     @Override
     public String runJob01 (String message) {
@@ -32,14 +32,14 @@ public class ExecJobTestServiceImpl implements ExecJobTestService {
 //    	SIN RETARDO (Esto seria lo normal,supongo)
 //    	 try {
 //             scheduler.triggerJob(JobKey.jobKey("printMessageJob"));
-//             return "Job ejecutado!"; 
-//         } catch (SchedulerException e) { 
+//             return "Job ejecutado!";
+//         } catch (SchedulerException e) {
 //             return "Error al ejecutar el Job: " + e.getMessage();
 //         }
     	
     	
 //    	Se llama a un trigger para forzar el retardo de unos segundos para TEST
-    	System.out.println("Mensaje recibido: " + message);
+    	System.out.println(">>> (middwar) Mensaje recibido: " + message);
 
         try {
             // Programar el Job para que se ejecute 10 segundos más tarde
@@ -57,10 +57,10 @@ public class ExecJobTestServiceImpl implements ExecJobTestService {
 
             // Disparar el Job usando el Trigger diferido
             scheduler.scheduleJob(trigger);
-             return "Job ejecutado!";
+             return "<<< (middwar) Job ejecutado!";
          } catch (SchedulerException e) {
              e.printStackTrace();
-             return "Error al ejecutar el Job: " + e.getMessage();
+             return "<<< (middwar) Error al ejecutar el Job: " + e.getMessage();
          }
     	 
     }
